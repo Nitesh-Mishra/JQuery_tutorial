@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#one h2 ").click(function(){
+    $("#one").slideUp();
+  });
+
+  $("#two h2").click(function(){
+    $("#one").slideDown();
+  });
+  $("button").click(function(){
+  	$("#one").slideToggle();
+  	$("#two").slideToggle();
+  })
+});
+</script>
+</head>
+
+<body><div id="one">
+<h2>This is a heading.</h2></div>
+<div id="two">
+<h2>This is another heading.</h2></div>
+<button>Slide Toggle</button>
+</body>
+</html>
+
+

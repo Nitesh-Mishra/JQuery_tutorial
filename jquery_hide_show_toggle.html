@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>
+		Jquery Event
+	</title>
+	<script type="text/javascript" src="jquery-1.7.2.min.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").toggle();
+				$("h3").toggle();
+			});
+			$("#hide").click(function(){
+				$("p").hide();
+			});
+			$("#show").click(function(){
+				$("p").show();
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<p id="hide">P is the Hide.</p>
+	<h3 id="show" >P is the show</h3>
+	<button>Toggle</button>
+</body>
+</html>

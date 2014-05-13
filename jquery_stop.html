@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>
+		Jquery Event
+	</title>
+	<script type="text/javascript" src="jquery-1.7.2.min.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("p").click(function(){
+				$("h3").fadeOut(2500);
+			});
+
+		$("button").click(function(){
+			$("h3").stop();
+		});
+
+		});
+	</script>
+</head>
+<body><div>
+	<p>P is the Hide.</p></div>
+	<h3>P is the show.</h3>
+	<button>Toggle</button>
+</body>
+</html>

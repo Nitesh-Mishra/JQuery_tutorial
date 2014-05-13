@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+  <script type="text/javascript"> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({height:500},"slow");
+    $("div").animate({width:50},"slow");
+    $("div").animate({height:150},"slow");
+    $("div").animate({width:400},"slow");
+    $("div").animate({left:"100px"},"slow");
+    $("div").animate({fontSize:"2em"},"slow");
+  });
+});
+
+</script> 
+
+</head>
+
+<body><div>
+<h2>This is a heading.</h2></div>
+<div id="two">
+<h2>This is another heading.</h2></div>
+<button>Jquery Animate</button>
+</body>
+</html>
+
+
